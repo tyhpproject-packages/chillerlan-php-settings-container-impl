@@ -1,0 +1,41 @@
+{
+    "name": "tyhpdef/chillerlan-php-settings-container-impl",
+    "description": "Implementation package for tyhpdef/chillerlan-php-settings-container. Require tyhpdef/chillerlan-php-settings-container, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "3.3.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/chillerlan-php-settings-container"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "chillerlan/php-settings-container": "3.3.0"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev"
+    }
+}
